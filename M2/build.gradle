@@ -2,12 +2,20 @@ defaultTasks 'jar'
 
 apply plugin 'java'
 
+
 dependencies {
-	_____________
+	
+}
+
+repositories {
+	mavenCentral()
 }
 
 jar { 
 	manifest {
 		attributes '<attribute>' : '______', <attribute>: '_______'
 	}
+
+	destinationDir = file('.')
+	version = '1.0'
 }
