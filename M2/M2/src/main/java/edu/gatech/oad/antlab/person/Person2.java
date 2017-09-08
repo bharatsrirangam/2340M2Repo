@@ -35,10 +35,9 @@ public class Person2 {
 	  	String randomizedInput = "";
       	List<String> letters = Arrays.asList(input.split(""));
       	Collections.shuffle(letters);
-      	for (int i = 0; i<letters.length; i++) {
+      	for (String i: letters) {
       		randomizedInput = randomizedInput + i;
       	}
-	  
 	  	return randomizedInput;
 	}
 	
