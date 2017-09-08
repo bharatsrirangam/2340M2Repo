@@ -12,13 +12,17 @@ repositories {
     mavenCentral()
 }
 
+version = '1.0'
+// mainClassName = 'AntLabMain'
+
 jar  {
   manifest {
      attributes  'Class-Path' : 'lib/resources.jar',
                  'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain',
                  'Implementation-Title' : 'Bits Please M2' ,
-                 'Implementation-Version' : 1.0
+                 'Implementation-Version' : version
     }
 
       destinationDir = file('.')
+      archiveName = 'Bits_Please_M2.jar'
 }
